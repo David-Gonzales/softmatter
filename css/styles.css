@@ -267,14 +267,14 @@ h4 {
 }
 
 .cont-nav-categorias {
-    background-color: #0da2fb;
+    background-color: #116f79;
     /* border: 2px solid #2d4858; */
     border-radius: 2rem;
     padding: .5rem 0;
 }
 
 .cont-nav-categorias:hover {
-    background-color: #0da4fb5d
+    background-color: #43929a
 }
 
 .cont-nav-categorias a {
