@@ -61,6 +61,10 @@ h4 {
     cursor: pointer;
 }
 
+.color-fondo-secundarias {
+    background-color: #f6f9f9;
+}
+
 
 /* HEADER */
 
@@ -461,4 +465,78 @@ h4 {
     font-size: 5rem;
     /* color: #16a4fa; */
     color: #fff;
+}
+
+
+/* ABOUT */
+
+.contenedor-vision-mision {
+    margin-top: 15rem;
+}
+
+.contenido-about {
+    margin-bottom: 9rem;
+    border: 1px solid #c7c7c7;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    padding-bottom: 1rem;
+}
+
+.contenido-about p {
+    padding: 0 4rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.titulo-about {
+    background-color: #116f79;
+}
+
+.titulo-about h2 {
+    margin: 0;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.card-container {
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 6rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: ".      card1   .    " "card2  card1   card3" "card2  card4   card3" ".      card4   .    ";
+}
+
+.card-item {
+    padding: 20px;
+    background: #fff;
+    border-top: 5px solid #43929a;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-parrafo {
+    text-align: center;
+}
+
+.card-item:nth-last-of-type(1) {
+    grid-area: card1;
+}
+
+.card-item:nth-last-of-type(2) {
+    grid-area: card2;
+}
+
+.card-item:nth-last-of-type(3) {
+    grid-area: card3;
+}
+
+.card-item:nth-last-of-type(4) {
+    grid-area: card4;
 }
