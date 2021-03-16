@@ -341,6 +341,7 @@ h4 {
 .contenedor-our-team {
     display: flex;
     /* align-items: center; */
+    column-gap: 3rem;
 }
 
 .contenido-our-team {
