@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/formulario.css">
 </head>
 
 <body class="color-fondo-secundarias">
@@ -56,10 +57,22 @@
                 <h2 class="">Contact Us</h2>
                 <p>Contact us with any kinds of inquiries and collaboration offers.</p>
             </div>
-            <form action=" " id="contacto" class="formulario contenido-formulario">
-                <input type="text " placeholder="Full Name" class="inten-formulario">
-                <input type="email " placeholder="Email Address " class="inten-formulario">
-                <textarea name=" " id=" " cols="30 " rows="10 " placeholder="Message " class="inten-formulario"></textarea>
+
+            <form action=" " id="formulario" class="formulario contenido-formulario">
+                <input id="fullName" type="text " placeholder="Full Name" class="inten-formulario">
+                <input id="email" type="email" placeholder="Email Address " class="inten-formulario">
+                <textarea id="mensaje" name=" " id=" " cols="30 " rows="10 " placeholder="Message " class="inten-formulario"></textarea>
+
+                <div  id="spinner">
+                    <div class="sk-chase">
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                    </div>
+                </div>
 
                 <div class="interior-formulario">
                     <div class="check">
@@ -67,7 +80,7 @@
                         <label for="subs">Subscribe Newsletter</label>
                     </div>
                     <div>
-                        <button type="button" class="boton">Send</button>
+                        <button type="submit" id="enviar" class="boton">Send</button>
                     </div>
                 </div>
             </form>
@@ -90,6 +103,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/validar-formulario.js"></script>
 
 </body>
 
