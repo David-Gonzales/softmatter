@@ -373,7 +373,8 @@ h4 {
 /* Formulario */
 
 .contenedor-contacto {
-    margin-top: 15rem;
+    margin-top: 20rem;
+    height: calc(100vh);
 }
 
 .encabezado {
