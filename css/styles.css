@@ -373,7 +373,8 @@ h4 {
 /* Formulario */
 
 .contenedor-contacto {
-    margin-top: 15rem;
+    margin-top: 20rem;
+    height: calc(100vh);
 }
 
 .encabezado {
@@ -470,13 +471,18 @@ h4 {
 }
 
 
-/* ABOUT */
+/* PAGINAS INTERNAS */
 
-.contenedor-vision-mision {
+.titulo-paginas-internas {
     margin-top: 15rem;
 }
 
-.contenido-about {
+.titulo-paginas-internas h2 {
+    border-bottom: 1px solid #c7c7c7;
+    text-transform: uppercase;
+}
+
+.contenedor-card-color {
     margin-bottom: 5rem;
     border: 1px solid #c7c7c7;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
@@ -484,22 +490,25 @@ h4 {
     padding-bottom: 1rem;
 }
 
-.contenido-about p {
-    padding: 0 4rem;
-    font-size: 2rem;
-    font-weight: 300;
-}
-
-.titulo-about {
+.contenedor-titulo-card-color {
     background-color: #116f79;
 }
 
-.titulo-about h2 {
+.titulo-card-color {
     margin: 0;
     padding: 1rem 2rem;
     color: #fff;
     text-transform: uppercase;
 }
+
+.parrafo-card-color {
+    padding: 0 4rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+/* ABOUT */
 
 .card-container {
     width: 99%;
@@ -546,33 +555,6 @@ h4 {
 
 /* Team */
 
-.contenedor-team {
-    margin-top: 15rem;
-}
-
-.contenido-team {
-    margin-bottom: 5rem;
-    border: 1px solid #c7c7c7;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-    background-color: #fff;
-    padding-bottom: 1rem;
-}
-
-.titulo-team {
-    background-color: #116f79;
-}
-
-.titulo-team h2 {
-    margin: 0;
-    padding: 1rem 2rem;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.menu-team {
-    background-color: #ad2ba0;
-}
-
 .nav-menu-item {
     padding: 1rem;
     display: flex;
@@ -582,11 +564,11 @@ h4 {
 }
 
 .inten-menu-team {
-    padding: .5rem 0;
+    padding: 1rem 0;
 }
 
 .inten-menu-team:hover {
-    background-color: #49144477;
+    background-color: #0a464d;
     border-radius: 2rem;
 }
 
@@ -594,8 +576,9 @@ h4 {
     text-decoration: none;
     color: #fff;
     font-weight: 900;
-    padding: 0 8rem;
+    padding: 0 4rem;
     text-align: center;
+    display: inline-block;
 }
 
 .contenedor-integrantes {
@@ -607,19 +590,19 @@ h4 {
     padding: 0 1rem;
 }
 
-.team {
-    flex-basis: calc(33% - 1rem);
-    box-shadow: 0 4px 3px rgba(0, 0, 0, .1);
-}
-
 .info-integrante-team {
     padding: 0 2rem 2rem 2rem;
+    text-align: center;
 }
 
 .info-integrante-team a {
     display: inline-block;
     text-decoration: none;
-    color: #271574;
+    color: #3218a8;
     margin: 2rem 0;
     font-size: 2rem;
+}
+
+.info-integrante-team a:hover {
+    color: #1f1f1f;
 }
