@@ -73,11 +73,6 @@ h4 {
 /* HEADER */
 
 .site-header {
-    background-color: #212529;
-    padding: 1rem 0 3rem 0;
-}
-
-.site-header.inicio {
     background-image: url(../img/pexels-pixabay-163317.jpg);
     background-position: center center;
     background-size: cover;
@@ -95,13 +90,16 @@ h4 {
     top: 0;
     right: 0;
     width: 100%;
-    background-color: #212529ea;
+}
+
+.color-barra {
+    background-color: #212529f1;
 }
 
 .icon-menu {
     color: #fff;
-    margin: 20px;
-    font-size: 2.5rem;
+    margin: 2rem;
+    font-size: 2.7rem;
     cursor: pointer;
 }
 
@@ -114,12 +112,17 @@ h4 {
     align-items: center;
 }
 
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navegacion a {
     text-decoration: none;
     color: #fff;
     font-size: 2.2rem;
     margin-right: 30px;
-    display: inline-block;
     transition: all 0.3s ease;
     border-bottom: 2px solid transparent;
     /* font-weight: bold; */
@@ -128,6 +131,41 @@ h4 {
 .navegacion a:hover {
     border-bottom: 2px solid #c7c7c7;
     padding: 5px 10px;
+}
+
+
+/* BOTON BUSCAR */
+
+.icon-search {
+    color: #fff;
+    font-size: 2.3rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.input-buscar {
+    padding-top: .5rem;
+    margin-right: 1rem;
+    border: 0;
+    outline: none;
+    transition: all 500ms ease;
+    transform: translate(-4%);
+}
+
+.transcision {
+    transition: all 1000ms ease;
+}
+
+.fondo-lupa {
+    background-color: #0a464d;
+    transition: all 500ms ease;
+    transform: translate(-4%);
+}
+
+.contenedor-buscar {
+    /* background-color: #2d348f; */
+    padding-bottom: .5rem;
+    display: flex;
 }
 
 
