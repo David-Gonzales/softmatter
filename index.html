@@ -16,47 +16,25 @@
 </head>
 
 <body>
-    <header class="site-header ">
-        <div class="contenedor contenido-header">
-            <div id="nav-barra" class="barra">
-                <div class="menu">
-                    <label for="btn-menu" class="icon-menu"></label>
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo.png" alt="Logo SoftMatter">
-                        </a>
-                    </div>
-                </div>
+    <header class="site-header">
 
-                <nav class="navegacion">
-                    <form>
-                        <div class="contenedor-buscar ">
-                            <div id="lupa">
-                                <label for="btn-search" class="icon-search "></label>
-                            </div>
-                            <input type="text" id="btn-search" class="input-buscar ocultar">
-                        </div>
-                    </form>
-                    <a href="#">Give Now</a>
-                    <a href="#">Suscribe</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+        <div id="nav-barra" class="barra">
+            <a href="index.html">
+                <img class="logo" src="img/logotipo02.png" alt="">
+            </a>
 
-    <input type="checkbox" id="btn-menu">
-    <div class="contenedor-menu">
-        <div class="contenido-menu">
-            <nav>
+            <nav class="navegacion">
+                <a href="index.html">Home</a>
                 <a href="team.html">Team</a>
                 <a href="research.html">Research</a>
-                <!-- <a href="academic.html">Academics</a> -->
+                <a href="#">News</a>
                 <a href="about.html">About</a>
                 <a href="contacto.html">Contact</a>
             </nav>
-            <label for="btn-menu" class="icon-cancel"></label>
+            <div class="icon-menu" id="open"></div>
         </div>
-    </div>
+
+    </header>
 
     <section class="contenedor-slogan">
         <div class="contenedor contenido-slogan">
@@ -64,14 +42,14 @@
         </div>
     </section>
 
-    <section class="site-nosotros">
+    <section>
         <div class="contenedor contenedor-nosotros">
-            <div class="contenido-nosotros">
+            <div class="contenido-nosotros-img contenido-nosotros">
                 <a href="about.html">
                     <img src="img/icono.png" alt="imagen icono">
                 </a>
             </div>
-            <div class="contenido-nosotros">
+            <div class="contenido-nosotros-parrafos contenido-nosotros">
                 <h2>WHO WE ARE?</h2>
                 <h3>SESI - Soft Matter, Energy and Society Research Institute</h3>
                 <p>SESI is an multidisciplinary research institution devoted to advance the fields of soft materials and energy, in a constant dialogue with societal issues. We believe that no research should be done for the sake of it, but for relevant
@@ -82,23 +60,8 @@
     </section>
 
     <main class="site-main">
-        <div class="categorias">
-
-            <nav class="contenedor nav-menu-item">
-                <div class="cont-nav-categorias">
-                    <a href="#">News</a>
-                </div>
-                <div class="cont-nav-categorias">
-                    <a href="#">Publications</a>
-                </div>
-                <div class="cont-nav-categorias">
-                    <a href="#">Scientific Articles</a>
-                </div>
-                <div class="cont-nav-categorias">
-                    <a href="#">Paper</a>
-                </div>
-            </nav>
-
+        <div class="contenedor categorias">
+            <h2>The Most Recent</h2>
         </div>
         <div class="contenedor">
 
@@ -179,10 +142,10 @@
 
     <section class="site-our-team">
         <div class="contenedor contenedor-our-team">
-            <div class="contenido-our-team">
+            <div class="our-team-img our-team-cont">
                 <img src="img/team02.jpg" alt="">
             </div>
-            <div class="contenido-our-team">
+            <div class="contenido-our-team our-team-cont">
                 <h2>OUR TEAM</h2>
                 <p>Our team is composed of an advisory board, experts on their respective fields, research fellows and associate members.</p>
 
@@ -221,7 +184,7 @@
                         <label for="subs">Subscribe Newsletter</label>
                     </div>
                     <div>
-                        <button type="submit" id="enviar" class="boton">Send</button>
+                        <button type="submit" id="enviar" class="boton ">Send</button>
                     </div>
                 </div>
             </form>
@@ -246,7 +209,7 @@
     </footer>
 
 
-
+    <!-- SCRIPT -->
     <script src="js/validar-formulario.js"></script>
     <script src="js/header.js"></script>
 </body>

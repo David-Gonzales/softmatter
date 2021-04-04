@@ -32,7 +32,3 @@ function menus() {
 window.addEventListener('scroll', function() {
     menus();
 })
-
-lupa.addEventListener('click', function() {
-    apertura();
-})
