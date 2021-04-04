@@ -115,7 +115,8 @@ h4 {
     }
 }
 
-.color-barra {
+.color-barra,
+.color-barra2 {
     background-color: #1d293ae7;
     padding: 1.5rem 1rem;
 }
@@ -143,7 +144,8 @@ h4 {
     left: 0;
     height: 100%;
     transition: 1s;
-    padding: 2rem;
+    width: 0;
+    overflow: hidden;
 }
 
 
@@ -156,6 +158,9 @@ h4 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 2rem;
+        overflow: visible;
+        width: 100%;
     }
     .icon-menu {
         display: none;
@@ -172,11 +177,12 @@ h4 {
 .navegacion a {
     display: block;
     width: 100%;
-    height: 5rem;
-    padding: 2rem;
+    padding: 1rem;
     text-decoration: none;
     color: #fff;
     font-size: 2.2rem;
+    text-align: center;
+    margin: .5rem
 }
 
 @media (min-width: 768px) {
@@ -506,7 +512,13 @@ h4 {
 /* PAGINAS INTERNAS */
 
 .titulo-paginas-internas {
-    margin-top: 15rem;
+    margin-top: 8rem;
+}
+
+@media (min-width: 768px) {
+    .titulo-paginas-internas {
+        margin-top: 15rem;
+    }
 }
 
 .titulo-paginas-internas h2 {
@@ -515,11 +527,17 @@ h4 {
 }
 
 .contenedor-card-color {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     border: 1px solid #c7c7c7;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     background-color: #fff;
     padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-card-color {
+        margin-bottom: 5rem;
+    }
 }
 
 .contenedor-titulo-card-color {
@@ -531,37 +549,68 @@ h4 {
     padding: 1rem 2rem;
     color: #fff;
     text-transform: uppercase;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .titulo-card-color {
+        text-align: left;
+    }
 }
 
 .parrafo-card-color {
-    padding: 0 4rem;
+    padding: 1rem;
     font-size: 2rem;
     font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .parrafo-card-color {
+        padding: 0 4rem;
+        margin: 2rem 0;
+        text-align: left;
+    }
 }
 
 
 /* ABOUT */
 
 .card-container {
-    width: 99%;
-    margin: 0 auto;
-    margin-top: 6rem;
-    padding-bottom: 3rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 20px;
-    grid-template-areas: ".      card1   .    " "card2  card1   card3" "card2  card4   card3" ".      card4   .    ";
+    display: block;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .card-container {
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 6rem;
+        padding-bottom: 3rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+        grid-template-areas: ".      card4   .    " "card2  card4   card3" "card2  card1   card3" ".      card1   .    ";
+    }
 }
 
 .card-item {
-    padding: 20px;
+    padding: 2rem;
     background: #fff;
     border-top: 5px solid #43929a;
     box-shadow: 0 0 3px rgba(0, 0, 0, .5);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .card-item {
+        margin: 0;
+    }
 }
 
 .card-parrafo {
