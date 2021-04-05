@@ -4,6 +4,8 @@ let abrir = document.getElementById('open');
 let botones = document.getElementsByClassName('btn-header');
 let cerrado = true;
 
+const btn = document.getElementById('enviar');
+
 function menus() {
     let desplazamientoActual = window.pageYOffset;
     if (cerrado) {
@@ -20,10 +22,12 @@ function menus() {
 function apertura() {
     let desplazamientoActual = window.pageYOffset;
     if (cerrado) {
+        btn.classList.remove('opacity-50');
         cerrado = false;
         menu.style.width = '100vw';
         nav.classList.add('color-barra');
     } else {
+        btn.classList.add('opacity-50');
         menu.style.width = '0%';
         menu.style.overflow = 'hidden';
         if (desplazamientoActual < 300) {
