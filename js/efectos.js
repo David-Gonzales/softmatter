@@ -4,6 +4,8 @@ let abrir = document.getElementById('open');
 let botones = document.getElementsByClassName('btn-header');
 let cerrado = true;
 
+const btn = document.getElementById('enviar');
+
 function menus() {
     let desplazamientoActual = window.pageYOffset;
     if (cerrado) {
