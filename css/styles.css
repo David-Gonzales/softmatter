@@ -404,6 +404,15 @@ h4 {
         font-size: 18px;
         padding: 2rem;
     }
+
+    .contenedor-integrantes-fellows{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 2rem;
+        margin: 2rem 0;
+        padding: 0 1rem;
+    }
 }
 
 .our-team-img img {
@@ -735,7 +744,6 @@ h4 {
     row-gap: 2rem;
     margin: 2rem 0;
     padding: 0 1rem;
-    
 }
 
 .info-integrante-team {
