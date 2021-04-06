@@ -79,8 +79,9 @@ h4 {
 .site-header {
     background-image: url(../img/pexels-pixabay-163317.jpg);
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     min-height: 40rem;
 }
 
@@ -574,6 +575,16 @@ h4 {
         padding: 0 4rem;
         margin: 2rem 0;
         text-align: left;
+    }
+}
+
+.card-img {
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .card-img {
+        margin: 0 3.5rem;
     }
 }
 
