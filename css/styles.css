@@ -299,6 +299,29 @@ h4 {
         flex-basis: calc(33% - 1rem);
         box-shadow: 0 4px 3px rgba(0, 0, 0, .1);
     }
+    .columnas-team{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .columnas-team h1 {
+        font-size: 60px;
+        line-height: 65px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .columnas-team h4 {
+        font-size: 20px;
+    }
+
+    .col {
+        width:550px;
+        margin: 2rem 2rem;
+    }
+
+    .descripcion-team h4{
+        font-size: 20px;
+    }
 }
 
 .contenido-publicacion {
