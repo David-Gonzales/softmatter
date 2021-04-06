@@ -79,8 +79,9 @@ h4 {
 .site-header {
     background-image: url(../img/pexels-pixabay-163317.jpg);
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     min-height: 40rem;
 }
 
@@ -378,9 +379,10 @@ h4 {
     .our-team-cont {
         flex-basis: calc(50% - 4rem);
     }
-    .our-team-img img {
-        box-shadow: 2px 0 2px rgba(0, 0, 0, .5);
-    }
+}
+
+.our-team-img img {
+    box-shadow: 2px 0 2px rgba(0, 0, 0, .5);
 }
 
 .contenido-our-team h2 {
@@ -395,11 +397,6 @@ h4 {
 
 
 /* Formulario */
-
-.contenedor-contacto {
-    margin-top: 20rem;
-    height: calc(100vh);
-}
 
 .encabezado {
     margin: 0;
@@ -581,6 +578,21 @@ h4 {
     }
 }
 
+.card-img {
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .card-img {
+        margin: 0 3.5rem;
+    }
+}
+
+.card-img-flex img {
+    border-radius: 3px;
+    box-shadow: -1px 2px 2px rgba(0, 0, 0, .5);
+}
+
 
 /* ABOUT */
 
@@ -601,6 +613,12 @@ h4 {
         gap: 20px;
         grid-template-areas: ".      card4   .    " "card2  card4   card3" "card2  card1   card3" ".      card1   .    ";
     }
+    .card-container-flex {
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        display: flex;
+    }
 }
 
 .card-item {
@@ -614,9 +632,23 @@ h4 {
     margin: 1rem;
 }
 
+.card-item-flex {
+    background: #fff;
+    border-top: 5px solid #43929a;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    flex-basis: calc(50% - 2rem);
+}
+
 @media (min-width: 768px) {
     .card-item {
         margin: 0;
+    }
+    .card-item-flex {
+        padding: 2rem;
     }
 }
 
