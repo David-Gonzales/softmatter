@@ -744,21 +744,31 @@ h4 {
 }
 
 .inten-menu-team {
-    padding: 1rem 0;
+    padding: 0;
 }
 
-.inten-menu-team:hover {
-    background-color: #0a464d;
-    border-radius: 2rem;
+@media (min-width: 768px) {
+    .inten-menu-team:hover {
+        background-color: #0a464d;
+        border-radius: 2rem;
+    }
 }
 
 .inten-menu-team a {
     text-decoration: none;
     color: #fff;
     font-weight: 900;
-    padding: 0 4rem;
+    width: 100%;
+    margin: .3rem 0;
+    padding: 1rem 0;
     text-align: center;
     display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .inten-menu-team a {
+        padding: 1rem 5rem;
+    }
 }
 
 .contenedor-integrantes {
@@ -795,4 +805,11 @@ h4 {
 .info-integrante-team p {
     text-align: center;
     margin: 0;
+}
+
+
+/* RESEARCH */
+
+.img-research {
+    max-width: 74%;
 }
