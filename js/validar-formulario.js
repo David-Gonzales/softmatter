@@ -29,7 +29,7 @@ function eventListeners(){
 //FUNCIONES
 function iniciarApp(){
     btnEnviar.disabled = true;
-    btnEnviar.classList.add('opacity-50', 'cursor-not-allowed');
+    btnEnviar.classList.add('cursor-not-allowed');
 }
 
 function validarFormulario(e){
