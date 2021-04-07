@@ -70,7 +70,7 @@ function validarFormulario(e){
 
     if(er.test(email.value) && fullName.value !=='' && mensaje.value !=='' ){
         btnEnviar.disabled = false;
-        btnEnviar.classList.remove('opacity-50', 'cursor-not-allowed');
+        btnEnviar.classList.remove('cursor-not-allowed');
     }
 }
 
