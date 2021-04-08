@@ -29,7 +29,7 @@ function eventListeners(){
 //FUNCIONES
 function iniciarApp(){
     btnEnviar.disabled = true;
-    btnEnviar.classList.add('cursor-not-allowed');
+    btnEnviar.classList.add('color-verde-claro' , 'cursor-not-allowed');
 }
 
 function validarFormulario(e){
@@ -70,7 +70,7 @@ function validarFormulario(e){
 
     if(er.test(email.value) && fullName.value !=='' && mensaje.value !=='' ){
         btnEnviar.disabled = false;
-        btnEnviar.classList.remove('cursor-not-allowed');
+        btnEnviar.classList.remove('color-verde-claro', 'cursor-not-allowed');
     }
 }
 
