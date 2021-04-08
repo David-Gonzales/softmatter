@@ -58,6 +58,10 @@ h4 {
     width: 100%;
 }
 
+.boton:hover {
+    background-color: #0e1b2c;
+}
+
 @media (min-width: 768px) {
     .boton {
         padding: 1rem 3rem;
@@ -107,7 +111,7 @@ h4 {
 
 @media (min-width: 768px) {
     .barra {
-        padding: 1.5rem 2rem;
+        padding: 3rem 2rem;
     }
 }
 
@@ -121,7 +125,7 @@ h4 {
     .color-barra,
     .color-barra2 {
         background-color: #1d293ae7;
-        padding: .3rem 2rem;
+        padding: 2.5rem 2rem;
     }
 }
 
@@ -156,7 +160,6 @@ h4 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem;
         overflow: visible;
         width: 100%;
     }
@@ -285,6 +288,7 @@ h4 {
 
 .publicacion {
     margin: 2rem 0;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, .1);
 }
 
 @media (min-width:768px) {
@@ -297,7 +301,6 @@ h4 {
     }
     .publicacion {
         flex-basis: calc(33% - 1rem);
-        box-shadow: 0 4px 3px rgba(0, 0, 0, .1);
     }
 }
 
@@ -378,40 +381,6 @@ h4 {
     }
     .our-team-cont {
         flex-basis: calc(50% - 4rem);
-    }
-
-    .columnas-team{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .columnas-team h1 {
-        font-size: 60px;
-        line-height: 65px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .columnas-team h4 {
-        font-size: 20px;
-    }
-
-    .col {
-        width:550px;
-        margin: 2rem 2rem;
-    }
-
-    .descripcion-team h4{
-        font-size: 18px;
-        padding: 2rem;
-    }
-
-    .contenedor-integrantes-fellows{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        row-gap: 2rem;
-        margin: 2rem 0;
-        padding: 0 1rem;
     }
 }
 
@@ -564,6 +533,10 @@ h4 {
     text-transform: uppercase;
 }
 
+.titulo-paginas-internas a {
+    text-decoration: none;
+}
+
 .contenedor-card-color {
     margin-bottom: 1rem;
     border: 1px solid #c7c7c7;
@@ -677,6 +650,11 @@ h4 {
     flex-basis: calc(50% - 2rem);
 }
 
+.card-item-flex a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
 @media (min-width: 768px) {
     .card-item {
         margin: 0;
@@ -711,30 +689,86 @@ h4 {
 
 /* Team */
 
+.enlace-item-team {
+    text-decoration: none;
+    display: block;
+}
+
+.enlace-item-team:hover {
+    background-color: #39838b;
+}
+
+.parrafo-team {
+    margin: 0;
+}
+
+.item-team img {
+    display: none;
+}
+
+.contenido-item-team {
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .item-team {
+        display: flex;
+        padding: 3rem;
+    }
+    .item-team img {
+        display: block;
+        border-radius: 2px;
+    }
+    .contenido-item-team {
+        flex-basis: calc(50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
 .nav-menu-item {
-    padding: 1rem;
-    display: flex;
-    column-gap: 2rem;
-    justify-content: space-between;
-    align-items: center;
+    display: none;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .nav-menu-item {
+        padding: 1rem;
+        display: flex;
+        column-gap: 2rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
 
 .inten-menu-team {
-    padding: 1rem 0;
+    padding: 0;
 }
 
-.inten-menu-team:hover {
-    background-color: #0a464d;
-    border-radius: 2rem;
+@media (min-width: 768px) {
+    .inten-menu-team:hover {
+        background-color: #0a464d;
+        border-radius: 2rem;
+    }
 }
 
 .inten-menu-team a {
     text-decoration: none;
     color: #fff;
     font-weight: 900;
-    padding: 0 4rem;
+    width: 100%;
+    margin: .3rem 0;
+    padding: 1rem 0;
     text-align: center;
     display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .inten-menu-team a {
+        padding: 1rem 5rem;
+    }
 }
 
 .contenedor-integrantes {
@@ -744,6 +778,10 @@ h4 {
     row-gap: 2rem;
     margin: 2rem 0;
     padding: 0 1rem;
+}
+
+.contenedor-integrantes-fellows {
+    justify-content: space-between;
 }
 
 .info-integrante-team {
@@ -757,8 +795,21 @@ h4 {
     color: #3218a8;
     margin: 2rem 0;
     font-size: 2rem;
+    margin-bottom: 0;
 }
 
 .info-integrante-team a:hover {
     color: #1f1f1f;
+}
+
+.info-integrante-team p {
+    text-align: center;
+    margin: 0;
+}
+
+
+/* RESEARCH */
+
+.img-research {
+    max-width: 74%;
 }

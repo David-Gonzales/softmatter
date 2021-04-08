@@ -16,59 +16,48 @@
 
 <body class="color-fondo-secundarias">
     <header>
-        <div id="nav-barra" class="barra color-barra">
-            <div class="menu">
-                <div class="logo">
-                    <a href="../../index.html">
-                        <img src="../../img/logotipo02.png" alt="">
-                    </a>
-                </div>
-            </div>
+        <div id="nav-barra" class="barra color-barra color-barra2">
+            <a href="../../index.html">
+                <img class="logo" src="../../img/logotipo02.png" alt="">
+            </a>
 
-            <nav class="navegacion">
-                <a href="../../index.html">Home</a>
-                <a href="../../team.html">Team</a>
-                <a href="../../research.html">Research</a>
-                <a href="#">News</a>
-                <a href="../../about.html">About</a>
-                <a href="../../contacto.html">Contact</a>
+            <nav class="navegacion" id="navegacion">
+                <a href="../../index.html" class="btn-header">Home</a>
+                <a href="../../team.html" class="btn-header">Team</a>
+                <a href="../../research.html" class="btn-header">Research</a>
+                <a href="#" class="btn-header">News</a>
+                <a href="../../about.html" class="btn-header">About</a>
+                <a href="../../contacto.html" class="btn-header">Contact</a>
             </nav>
+            <div class="icon-menu" id="open"></div>
         </div>
     </header>
 
     <div class="contenedor titulo-paginas-internas">
-        <h2>Our team</h2>
+        <h2><a href="../../team.html">Team</a> / <a href="../fellows.html">Fellows</a> / Life Sciences</h2>
     </div>
 
     <section class="contenedor contenedor-team">
         <div class="contenedor-card-color">
             <div class="contenedor-titulo-card-color">
-                <nav class="nav-menu-item">
+                <div class="icon-menu" id="abrir-menu-team"></div>
+                <nav id="nav-menu-item" class="nav-menu-item">
                     <div class="inten-menu-team">
-                        <a href="../advisory-board.html">Advisory Board</a>
+                        <a href="#">Advisory Board</a>
                     </div>
                     <div class="inten-menu-team">
-                        <a href="../leadership.html">Leadership</a>
+                        <a href="leadership.html">Leadership</a>
                     </div>
                     <div class="inten-menu-team">
-                        <a href="../fellows.html">Fellows</a>
+                        <a href="fellows.html">Fellows</a>
                     </div>
                     <div class="inten-menu-team">
-                        <a href="../associate-members.html">Associate Members</a>
+                        <a href="associate-members.html">Associate Members</a>
                     </div>
                 </nav>
             </div>
-            
-            <div class="contenedor-integrantes">
-                <div class="columnas-team">
-                    <div class="col">
-                        <h1>Life Sciences</h1>
-                    </div>
-                    <div class="col">
-                        <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cupiditate suscipit debitis cumque modi aliquam nostrum! Magni, quam eum incidunt pariatur doloribus reiciendis sequi neque. Vel officia modi ab nam.</h4>
-                    </div>
-                </div>
 
+            <div class="contenedor-integrantes">
                 <div class="publicacion">
                     <div>
                         <a href="">
@@ -110,7 +99,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="../../js/efectos.js"></script>
+    <script src="../../js/menu-team.js"></script>
 </body>
 
 </html>
