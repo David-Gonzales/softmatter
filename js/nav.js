@@ -37,7 +37,7 @@ if(naveg2 !== null){
 const nav3 = document.querySelector('.header3');
 if(nav3 !== null){
 nav3.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
-<a href="index.html">
+<a href="../index.html">
     <img class="logo" src="../img/logotipo02.png" alt="">
 </a>
 
@@ -55,7 +55,7 @@ nav3.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
 const nav4 = document.querySelector('.header4');
 if(nav4 !== null){
 nav4.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
-<a href="index.html">
+<a href="../../index.html">
     <img class="logo" src="../../img/logotipo02.png" alt="">
 </a>
 
