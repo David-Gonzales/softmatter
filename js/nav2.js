@@ -1,7 +1,7 @@
 const naveg2 = document.querySelector('.header2');
 naveg2.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
 <a href="index.html">
-    <img class="logo" src="/img/logotipo02.png" alt="">
+    <img class="logo" src="img/logotipo02.png" alt="">
 </a>
 
 <nav class="navegacion" id="navegacion">
