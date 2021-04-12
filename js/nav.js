@@ -69,3 +69,19 @@ nav4.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
 <div class="icon-menu" id="open"></div>
 </div>`;
 }
+
+const footer = document.querySelector('#footer');
+footer.innerHTML = `<div class="contenedor contenedor-footer">
+<div class="contendido-footer">
+    <h3>Follow us</h3>
+    <p><span>Phone number: </span>+51 966231249</p>
+    <p><span>Email: </span>hola@softmatter.org.pe</p>
+    <p><span>Address: </span>Calle Juan XXIII s/n, Lambayeque, Lambayeque, Perú</p>
+    <p class="copyrigth">Soft Matter &copy; 2021 - All rights reserved</p>
+</div>
+<div class="contenido-footer">
+    <a href="https://www.facebook.com/softmatter" class="icon-facebook-official"></a>
+    <a href="https://twitter.com/SoftMatters" class="icon-twitter-squared"></a>
+    <a href="" class="icon-instagram"></a>
+</div>
+</div>`;
