@@ -153,6 +153,7 @@ h4 {
     background-color: transparent;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     overflow: visible;
     width: 100%;
   }
