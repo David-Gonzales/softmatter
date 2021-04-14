@@ -826,7 +826,7 @@ h4 {
 }
 
 .sobre-mi {
-  padding: 1rem 0;
+  padding: 1.3rem 0;
   background-color: #47959e;
 }
 
@@ -852,10 +852,17 @@ h4 {
   }
 }
 
+.sobre-mi__contenedor-link {
+  text-align: center;
+}
+
 .sobre-mi__parrafo--enlace {
-  display: block;
+  text-align: center;
   text-decoration: none;
-  color: #3210c7;
+}
+
+.sobre-mi__parrafo--enlace:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .informacion {
