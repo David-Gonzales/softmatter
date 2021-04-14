@@ -1,6 +1,6 @@
 const naveg = document.querySelector('#header');
-if(naveg !== null){
-    naveg.innerHTML = `<div id="nav-barra" class="barra">
+if (naveg !== null) {
+  naveg.innerHTML = `<div id="nav-barra" class="barra">
     <a href="index.html">
         <img class="logo" src="img/logotipo02.png" alt="Logo">
     </a>
@@ -17,8 +17,8 @@ if(naveg !== null){
 }
 
 const naveg2 = document.querySelector('.header2');
-if(naveg2 !== null){
-    naveg2.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
+if (naveg2 !== null) {
+  naveg2.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
 <a href="index.html">
     <img class="logo" src="img/logotipo02.png" alt="">
 </a>
@@ -35,8 +35,8 @@ if(naveg2 !== null){
 }
 
 const nav3 = document.querySelector('.header3');
-if(nav3 !== null){
-nav3.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
+if (nav3 !== null) {
+  nav3.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
 <a href="../index.html">
     <img class="logo" src="../img/logotipo02.png" alt="">
 </a>
@@ -53,8 +53,8 @@ nav3.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
 }
 
 const nav4 = document.querySelector('.header4');
-if(nav4 !== null){
-nav4.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
+if (nav4 !== null) {
+  nav4.innerHTML = `<div id="nav-barra" class="barra color-barra color-barra2">
 <a href="../../index.html">
     <img class="logo" src="../../img/logotipo02.png" alt="">
 </a>
@@ -82,6 +82,5 @@ footer.innerHTML = `<div class="contenedor contenedor-footer">
 <div class="contenido-footer">
     <a href="https://www.facebook.com/softmatter" class="icon-facebook-official"></a>
     <a href="https://twitter.com/SoftMatters" class="icon-twitter-squared"></a>
-    <a href="" class="icon-instagram"></a>
 </div>
 </div>`;

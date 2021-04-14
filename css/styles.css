@@ -77,6 +77,16 @@ h4 {
   display: none;
 }
 
+.footer-fijo {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer-fijo main {
+  flex: 1;
+}
+
 
 /* HEADER */
 
@@ -806,4 +816,103 @@ h4 {
 
 .img-research {
   max-width: 74%;
+}
+
+
+/* Pagina BIOGRAFIAS */
+
+.titulo {
+  margin-top: 10rem;
+}
+
+.sobre-mi {
+  padding: 1rem 0;
+  background-color: #47959e;
+}
+
+.sobre-mi__parrafo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.sobre-mi__parrafo--nombre {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .sobre-mi__parrafo--nombre {
+    font-size: 3rem;
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.sobre-mi__parrafo--enlace {
+  display: block;
+  text-decoration: none;
+  color: #3210c7;
+}
+
+.informacion {
+  margin-top: 1rem;
+  border: 1px solid #c7c7c7;
+}
+
+.informacion__card {
+  background-color: #31828b;
+}
+
+.informacion__titulo {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding: .5rem 1rem;
+  font-size: 2.5rem;
+}
+
+.informacion__parrafo {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.informacion__parrafo--lista {
+  padding: 0;
+}
+
+.informacion__parrafo--lista-elementos {
+  list-style: none;
+}
+
+.informacion__link {
+  text-decoration: none;
+  color: #2d348f;
+}
+
+.informacion__link:hover {
+  border-bottom: 1px solid #2d348f;
+}
+
+@media (min-width: 768px) {
+  .informacion__parrafo {
+    padding: 1rem 2.5rem;
+  }
+  .contenedor__slider {
+    display: flex;
+    justify-content: space-between;
+  }
+  .slider__izquierda {
+    flex: 0 0 calc(33.3% - 2rem);
+  }
+  .slider__derecha {
+    flex: 0 0 calc(66.7% - 2rem);
+  }
 }
