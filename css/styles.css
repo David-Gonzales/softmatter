@@ -87,6 +87,63 @@ h4 {
   flex: 1;
 }
 
+/* Boton Up*/
+
+#button-up{
+  width: 4rem;
+  height: 4rem;
+  background:#1d293ae7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
+  transform: scale(0); /*para que el botón se mantenga oculto*/
+}
+
+#button-up img{
+  max-width: 50%;
+}
+
+#button-up:hover{
+  transform: scale(1.1);
+  border-color: rgba(0,0,0,0.1)
+}
+
+@media (min-width: 768px) {
+  #button-up {
+    width: 5rem;
+    height: 5rem;
+    background:#1d293ae7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0); /*para que el botón se mantenga oculto*/
+  }
+  #button-up img{
+    max-width: 50%;
+  }
+  
+  #button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1)
+  }
+  
+}
 
 /* HEADER */
 

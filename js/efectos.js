@@ -54,3 +54,25 @@ window.addEventListener('resize', function() {
 abrir.addEventListener('click', function() {
   apertura();
 });
+
+/* Botón de subir*/
+document.getElementById('button-up').addEventListener('click', scrollUp);
+
+function scrollUp(){
+  var desplazamientoScroll = document.documentElement.scrollTop;
+  if(desplazamientoScroll > 0){
+    window.requestAnimationFrame(scrollUp); //prepara el botón como animado
+    window.scrollTo(0,desplazamientoScroll - (desplazamientoScroll / 20));
+    buttonUp.style.transform = "scale(0)";
+  }
+}
+
+buttonUp = document.getElementById('button-up');
+window.onscroll = function(){
+  var scroll = document.documentElement.scrollTop;
+  if(scroll > 1000){
+    buttonUp.style.transform = "scale(1)";
+  }else{
+    buttonUp.style.transform = "scale(0)";
+  }
+}
